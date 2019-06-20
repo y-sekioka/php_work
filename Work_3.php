@@ -1,62 +1,52 @@
 <?php
 //1
-function _2x($x) {
-echo $x * 2;
-echo "\n";
+function multi_double ($num) {
+    return $num * 2;
 }
-_2x(7);
+echo multi_double(7) . "\n";
 
 //1
 
 //2
-function a_b($a,$b){
-    $sum=$a+$b;
-    echo $sum;
-    echo "\n";
+function sum($a , $b){
+    return $a + $b;
 }
-a_b(3,5);
+echo sum(3,5) . "\n";
 //2
 
 //3
-function allx($arr){
-$total=1;
-foreach($arr as $ar){
-    $total*=$ar;
+function multiple_all($arr){
+    $total=1;
+    foreach($arr as $num){
+        $total*=$num;
 }
-echo $total;
-echo "\n";
+    return $total;
 }
-allx( array(1,3,5,7,9));
+echo multiple_all(array(1,3,5,7,9)) . "\n";
 //3
 
 
 //4
 function max_array($arr){
- $max_number = max($arr);
-
- echo $max_number;
- echo "\n";
+    $max_number = max($arr);
+    return $max_number;
  }
- max_array( array(5,6,7));
+echo max_array(array(5,6,7,54,5,75,1)) . "\n";
 //4
 
 //5 strip_tags
 $text='<p>"文章A"</p><ex>"文章B"</ex>';
 
-echo $text;
-echo"\n";
-echo strip_tags($text);
-echo"\n";
-echo strip_tags($text,'<p>');
-echo"\n";
+echo $text . "\n";
+echo strip_tags($text) . "\n";
+echo strip_tags($text,'<p>') . "\n";
 // strip_tags
 
 // array_push
 $country=['Japan','U.S.','U.K.'];
 print_r($country);
 array_push($country,'China','Russia');
-print_r($country);
-echo "\n";
+print_r($country) . "\n";
 // array_push
 
 //array_merge
@@ -67,16 +57,12 @@ print_r($array3);
 //array_merge
 
 //time,mktime 
-echo"現在のタイムスタンプ：".time();
-echo"\n";
-echo"2019/6/20,18:30".mktime(18,30,0,6,20,2019);
-echo"\n";
+echo"現在のタイムスタンプ：" . time() . "\n";
+echo"2019/6/20,18:30" . mktime(18,30,0,6,20,2019) . "\n";
 //time,mktime
 
 //date
 date_default_timezone_set('Asia/Tokyo');
-echo '現在の時刻：'.date("Y/m/d H:i:s");
-echo "\n";
+echo '現在の時刻：' . date("Y/m/d H:i:s") . "\n";
 //date , 5
 ?>
-

@@ -10,7 +10,7 @@ class ProfileController extends Controller
     //
     public function add()
     {
-        return view('adomin.profile.create');
+        return view('admin.profile.add');
     }
     public function create()
     {
